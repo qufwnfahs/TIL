@@ -1,7 +1,5 @@
 ## 1. Dagger 2 시작하기
 
-------
-
 **build gradle (app) 에 dependency 추가**
 
 - BuffterKnife 10.0.0 이전 버전은 AndroidX에 대해 지원을 하지 않는다.
@@ -15,18 +13,19 @@ android {
 	 * generateStubs : Component 참조를 Kotlin 파일에 기술하기 위한 옵션
 	 */
 	kapt {
-			generateStubs = true
-  }
+		generateStubs = true
+	}
 
 	/**
-		* ButterKnife requires Java 8
-		*/ 
+	 * ButterKnife requires Java 8
+	 */ 
 	compileOptions {
-			sourceCompatibility JavaVersion.VERSION_1_8
-			targetCompatibility JavaVersion.VERSION_1_8
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
 	}
 	...
 }
+
 dependencies {
 	...
 	implementation "com.google.dagger:dagger:$dagger2_version"
@@ -46,23 +45,21 @@ dependencies {
 - Kotlin Annotation Processing
 - **일반 javac보다 먼저 kotlinc가 동작한다.**
 
-
+</br>
 
 ### 1.1 Overriding Application
 
 Application 클래스를 Override할 경우, 가장 먼저 객체화시키기 위해 AndroidManifest.xml의 Application 속성에 **android:name** 을 지정
 
+</br>
 
-
-
+</br>
 
 ## 2. 의존성 주입 (Dependency Injection)
 
-------
-
 의존성 주입의 개념을 명확히 하자.
 
-
+</br>
 
 ### 2.1 Dependency Non-Injection
 
@@ -88,7 +85,7 @@ public class Example {
 
 - 이 모든 것을 **"의존성 (dependency)"** 이라 부를 수 있다.
 
-
+</br>
 
 ### 2.2 Dependency Injection
 
@@ -116,7 +113,7 @@ public class Example {
 
 이를 통해 클래스에 **"의존성 (dependency)"** 을 **"주입 (inject)"** 한다.
 
-
+</br>
 
 이것이 전부다.  나머지는 이 기본 패턴의 변형들이다.
 
@@ -127,15 +124,15 @@ public class Example {
 3. Interface Injection (인터페이스를 통한 주입)
    - 의존성을 주입하는 함수를 포함한 인터페이스를 작성하고 이 인터페이스를 구현하도록 함으로써 실행 시에 이를 통하여 의존성을 주입
 
-
+</br>
 
 즉, 의존성 주입이란 **구성**과 **사용**의 책임을 구분하는 것이다.
 
 **의존성 주입을 통해 의존성이 분리하게 되고, 그로 인해 기존의 의존 관계가 역전되게 된다.**
 
+</br>
 
-
-
+</br>
 
 ## 3. Dagger 기본 개념 이해하기
 
@@ -147,7 +144,7 @@ Dagger는 다음 5가지의 필수 개념이 있다.
 4. Module
 5. Scope
 
-
+</br>
 
 ### 3.1 Inject
 
@@ -176,7 +173,7 @@ class MainActivity : AppCompatActivity(), MainActivityMVP.View {
 
 생성자 외에도 메소드와 필드에도 @Inject annotation을 선언할 수 있다.
 
-
+</br>
 
 **Dagger**가 @Inject annotation 을 통해 의존성을 주입하기 위해서는 **아래 두 가지 annotation을 이용해야 한다.**
 
@@ -211,7 +208,7 @@ class MainModule {
 }
 ```
 
-
+</br>
 
 **@Inject와 @Module 사이의 의존성을 연결하기 위해서는** dagger.Component.annotation을 이용해야 한다.
 
@@ -232,7 +229,7 @@ interface ApplicationComponent {
 
 생성된 클래스는 @Component interface 이름 앞에 **"Dagger"**를 붙이게 된다.
 
-
+</br>
 
 Dagger를 이용해 의존성 주입을 구현하고, 해당 인스턴스를 얻어오기 위해 **build()와 create()**, 두 가지 방법을 이용할 수 있다.
 
@@ -272,9 +269,9 @@ MediaComponent component = DaggerMediaComponent.create();
 MediaController controller = component.mediaController();
 ```
 
+</br>
 
-
-
+</br>
 
 ## 참고
 
