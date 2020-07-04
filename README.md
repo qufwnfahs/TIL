@@ -21,5 +21,5 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 
 ### Algorithm
 
-- [200704_ 백준 문제풀이](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200704_백준 문제풀이.md)
+- [200704_ 백준 문제풀이](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200704_백준_문제풀이.md)
 
