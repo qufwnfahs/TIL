@@ -59,10 +59,10 @@ import com.google.gson.annotations.SerializedName
 
 data class GithubRepository (
 
-	@SerializedName("id") val id : Int,
-	@SerializedName("node_id") val node_id : String,
-	@SerializedName("name") val name : String,
-	...
+    @SerializedName("id") val id : Int,
+    @SerializedName("node_id") val node_id : String,
+    @SerializedName("name") val name : String,
+    ...
 }
 ```
 
@@ -180,10 +180,10 @@ Retrofit 구성에 필요한 인스턴스들을 모두 정의한 `Module 클래�
 ```kotlin
 @Provides
 fun provideClient(): OkHttpClient {
-		val interceptor = HttpLoggingInterceptor()
-		interceptor.level = HttpLoggingInterceptor.Level.BODY
+    val interceptor = HttpLoggingInterceptor()
+    interceptor.level = HttpLoggingInterceptor.Level.BODY
 
-		return OkHttpClient.Builder().addInterceptor(interceptor).build()
+    return OkHttpClient.Builder().addInterceptor(interceptor).build()
 }
 ```
 
@@ -192,11 +192,11 @@ fun provideClient(): OkHttpClient {
 ```kotlin
 @Provides
 fun provideRetrofit(baseURL: String, client: OkHttpClient): Retrofit {
-		return Retrofit.Builder()
-            .baseUrl(baseURL)
-            .client(client)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+    return Retrofit.Builder()
+	.baseUrl(baseURL)
+	.client(client)
+	.addConverterFactory(GsonConverterFactory.create())
+	.build()
 }
 ```
 
@@ -257,25 +257,25 @@ class ApiModule {
 lateinit var githubAPI: GithubAPI
 
 override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_login)
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_login)
 		
-		(application as App).getComponent().inject(this)	// Module Inject to Component
+    (application as App).getComponent().inject(this)	// Module Inject to Component
 
-		// Retrofit
-		val call = githubAPI.getRepositories("qufwnfahs")
-		call.enqueue(object : Callback<List<GithubRepository>> {
-				override fun onResponse(call: Call<List<GithubRepository>>, response: Response<List<GithubRepository>>) {
-						// onResponse는 무조건 불린다.
-						// response가 올바르지 않다면 response.body() 는 null 을 return
-						for (repository in response.body() as List<GithubRepository>) {
-								println(repository.name)
-						}
+    // Retrofit
+    val call = githubAPI.getRepositories("qufwnfahs")
+    call.enqueue(object : Callback<List<GithubRepository>> {
+        override fun onResponse(call: Call<List<GithubRepository>>, response: Response<List<GithubRepository>>) {
+            // onResponse는 무조건 불린다.
+            // response가 올바르지 않다면 response.body() 는 null 을 return
+            for (repository in response.body() as List<GithubRepository>) {
+                println(repository.name)
+            }
         }
-				override fun onFailure(call: Call<List<GithubRepository>>, t: Throwable) {
-						t.printStackTrace()
-				}
-		})
+        override fun onFailure(call: Call<List<GithubRepository>>, t: Throwable) {
+            t.printStackTrace()
+        }
+    })
 }
 ```
 </br>
