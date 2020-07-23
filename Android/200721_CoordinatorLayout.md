@@ -12,7 +12,7 @@
 
 ```kotlin
 dependencies {
-		implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
 }
 ```
 
