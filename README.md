@@ -24,10 +24,10 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 
 ### Algorithm
 
-- [200704_ 백준 문제풀이](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200704_백준_문제풀이.md)
+- [200704_BOJ_problem_solving#1](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200704_백준_문제풀이.md)
 - [200706_divide_and_conquer](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200706_divide_and_conquer.md)
 - [200707_codeforce_653_div3](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200707_codeforce_653_div3.md)
-- [200713_baekjoon_problem_solving](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200713_baekjoon_problem_solving.md)
+- [200713_BOJ_problem_solving#2](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200713_baekjoon_problem_solving.md)
 - [200719_codeforce_650_div3](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200719_codeforce_650_div3.md)
 - [200720_dynamic_programming#1](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200720_dynamic_programming%231.md)
 - [200722_BOJ_Stack&Deque](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200722_BOJ%20(Stack%2C%20Deque).md)
