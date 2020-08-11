@@ -32,3 +32,7 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 - [200720_dynamic_programming#1](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200720_dynamic_programming%231.md)
 - [200722_BOJ_Stack&Deque](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200722_BOJ%20(Stack%2C%20Deque).md)
 - [200728_BOJ_BFS&Stack](https://github.com/qufwnfahs/TIL/blob/master/algorithm/200728_BOJ%20(BFS%2C%20Stack).md)
+
+### Algorithm (https://github.com/ndb796/python-for-coding-test)
+
+- [200811_Greedy](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200811_Greedy.md)
