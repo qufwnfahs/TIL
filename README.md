@@ -39,3 +39,4 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 - [200811_Greedy](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200811_Greedy.md)
 - [200814 Greedy_Practice_1](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200814_Greedy_Practice_1.md)
 - [200828_Implementation](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200828_Implementation.md)
+- [200830_DFS_BFS](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200830_DFS%2C%20BFS.md)
