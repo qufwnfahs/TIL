@@ -32,11 +32,11 @@
 
 ```kotlin
 fun pibo(x: Int) {
-		if (x == 1 || x == 2) return 1
-		if (dp[x] != 0) return dp[x]
+    if (x == 1 || x == 2) return 1
+    if (dp[x] != 0) return dp[x]
 		
-		dp[x] = pibo(x - 1) + pibo(x - 2)
-		return dp[x]
+    dp[x] = pibo(x - 1) + pibo(x - 2)
+    return dp[x]
 }
 ```
 
@@ -53,7 +53,7 @@ dp[1] = 1
 dp[2] = 1
 
 for (i in 3 until n) {
-		dp[i] = dp[i - 1] + dp[i - 2]
+    dp[i] = dp[i - 1] + dp[i - 2]
 }
 
 print(dp[n])
