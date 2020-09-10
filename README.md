@@ -46,3 +46,4 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 - [200904_Shortest_Path](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200904_Shortest_Path.md)
 - [200907_PS_Practice#1](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200907_PS_Practice%231.md)
 - [200909_PS_Practice#2](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200909_PS_Practice%232.md)
+- [200910_PS_KAKAO 2020](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200910_PS_KAKAO%202020.md)
