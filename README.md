@@ -49,3 +49,4 @@ Today I Learned / 하루하루 배운 것들을 문서로 정리해보자
 - [200910_PS_KAKAO 2020](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200910_PS_KAKAO%202020.md)
 - [200915_PS_Practice#3](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200915_PS_Practice%233.md)
 - [200917_PS_Practice#4](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200917_PS_Practice%234.md)
+- [200923_PS_Practice#5](https://github.com/qufwnfahs/TIL/blob/master/algorithm-ndb796/200923_PS_Practice%235.md)
